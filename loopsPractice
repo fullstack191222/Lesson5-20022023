@@ -1,0 +1,119 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        //LOOPS CONTINUE
+        //FROM Hw1
+        //Input price of the meals till you will have more than 500
+/*        Scanner scanner = new Scanner(System.in);
+        int sumOfDish = 0;//holds sum of meals and will be increasing
+        while (sumOfDish < 500) {//loop start
+//            System.out.println("please enter the price of the meal");
+//            int priceOfTheDish = scanner.nextInt(); //take the price of the current meal.
+            int priceOfTheDish = (int)(Math.random()*181) + 20;//random number between 20 to 200
+            System.out.print(priceOfTheDish + ";");
+            //sumOfMeals = sumOfDish + priceOfTheDish;
+            sumOfDish += priceOfTheDish;//150
+        }
+        //we are after the loop meaning the user finished 500 shekels
+        System.out.println("you finished your money");*/
+
+
+       /* כתוב לולאה שקולטת מספרים מהמשתמש.
+        a. אם המספר זוגי נתעלם ממנו (רמז: השתמש במודולו 2)
+        b. אם המספר אי-זוגי נסכום אותו
+        c. אם נקבל מספר שלילי ניצא מהלולאה*/
+        //d. אם סכום המספרים שנקלט גדול מ- 1000 ניצא מהלולאה
+      /*  Scanner scanner = new Scanner(System.in);
+        int number = 0;
+
+        int sumOfNumbers = 0;//here the variable where we will save the sum
+        while (number >= 0 && sumOfNumbers < 1000){//D option 2  //we are going to the loop while the number is higher than 0
+            //D  option1 to exit loop with break
+           *//* if (sumOfNumbers >= 1000) {
+                break;
+            }*//*
+            System.out.println("please enter the number");
+            number = scanner.nextInt();//number inout from the user
+            // number is even when it divided by 2 without remainder . NUMBER %2 == 0
+            if (number % 2 == 1) {//even numbers
+                sumOfNumbers = sumOfNumbers + number;
+            }
+        }
+
+        System.out.println(sumOfNumbers);*/
+
+        //Exercise to reverse the number any number.
+        //to reverse ALL numbers.
+       /* int number = 6556565;
+        int digits = number%10;
+        int tens = number/10; // all number except last one.
+        */
+        //123
+        // we want print 321
+
+        //iteration 1
+        // int digit = 123 % 10 ----> 3 ----> print(digit)
+        // int number =  123/10 ----> 12
+        //iteration 2
+        //12  --> 12%10 ---> 2 -->>> print(digit)
+        //12/10 ----> 1
+        //iteration 3
+        //1  ---> 1%10 ---> 1 ----->>> print(1)
+        // number =  1/10 ----> 0
+        //what was condition of loop ??
+        //--> while number > 0
+      /*  int number = 123;
+        //remainder
+        // leftover
+        while (number != 0) {//everything is working
+            int digit = number%10;
+            System.out.print(digit);
+            number = number / 10;
+        }*/
+
+        //Exercise.
+        //input number from the user (temperature can be not whole number)
+        //to check if the temperature > 37 if yes print sorry you cannot enter
+        //if temperature <= 37 print welcome.
+        //if input is -1 break the loop and print the numbers of entered users.
+       /* Scanner scanner = new Scanner(System.in); //scanner declaration
+        int sum = 50; //here is sum of people inside
+        float temperature = 0f; //just to enter the loop we put value 0
+        while (temperature != -1) {
+            System.out.println("enter your temperature");
+            temperature = scanner.nextFloat();
+            if (temperature > 37) {
+                System.out.println("feel well see you next time put mask");
+            } else if (temperature <= 37 && temperature != -1) {
+                System.out.println("welcome");
+                sum++; //sum = sum+1; here we sum the people inside.
+            }
+             System.out.println(sum);
+        }*/
+        //Exercise print this patter:
+       /* 7654321
+        7654321
+        7654321
+        7654321
+        7654321
+        7654321
+        7654321
+        7654321
+        7654321
+        7654321     */
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j<7 ; j++) {
+                System.out.print(7 - j); // 7 6 5 4 3 2 1
+            }
+            System.out.println();
+        }
+
+
+
+
+
+
+    }
+}
